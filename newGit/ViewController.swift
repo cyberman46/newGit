@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var txtShow: UITextField!
     @IBOutlet weak var lblName: UILabel!
     @IBOutlet weak var btnclick: UIButton!
     override func viewDidLoad() {
@@ -22,6 +23,9 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func clickShowName(sender: AnyObject) {
+        txtShow.text = "Hey Ake"
+    }
 
 }
 
